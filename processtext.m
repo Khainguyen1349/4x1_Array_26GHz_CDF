@@ -37,15 +37,15 @@ filep4s = strcat('Khai-array_P4_3dNF26suzanHAnd_beam',num2str(beam),'.txt');
 [G_complex_co3s, G_complex_cross3s,~] = readtext(filep3s, beam, ntheta, nphi, 1, 0);
 [G_complex_co4s, G_complex_cross4s,~] = readtext(filep4s, beam, ntheta, nphi, 1, 0);
 
-GaindB1 = 20*log10(abs(G_complex_co1).^2 + abs(G_complex_cross1).^2);
-GaindB2 = 20*log10(abs(G_complex_co2).^2 + abs(G_complex_cross2).^2);
-GaindB3 = 20*log10(abs(G_complex_co3).^2 + abs(G_complex_cross3).^2);
-GaindB4 = 20*log10(abs(G_complex_co4).^2 + abs(G_complex_cross4).^2);
+GaindB1 = 10*log10(abs(G_complex_co1).^2 + abs(G_complex_cross1).^2);
+GaindB2 = 10*log10(abs(G_complex_co2).^2 + abs(G_complex_cross2).^2);
+GaindB3 = 10*log10(abs(G_complex_co3).^2 + abs(G_complex_cross3).^2);
+GaindB4 = 10*log10(abs(G_complex_co4).^2 + abs(G_complex_cross4).^2);
 
-GaindB1h = 20*log10(abs(G_complex_co1h).^2 + abs(G_complex_cross1h).^2);
-GaindB2h = 20*log10(abs(G_complex_co2h).^2 + abs(G_complex_cross2h).^2);
-GaindB3h = 20*log10(abs(G_complex_co3h).^2 + abs(G_complex_cross3h).^2);
-GaindB4h = 20*log10(abs(G_complex_co4h).^2 + abs(G_complex_cross4h).^2);
+GaindB1h = 10*log10(abs(G_complex_co1h).^2 + abs(G_complex_cross1h).^2);
+GaindB2h = 10*log10(abs(G_complex_co2h).^2 + abs(G_complex_cross2h).^2);
+GaindB3h = 10*log10(abs(G_complex_co3h).^2 + abs(G_complex_cross3h).^2);
+GaindB4h = 10*log10(abs(G_complex_co4h).^2 + abs(G_complex_cross4h).^2);
 
 GaindB1s = 10*log10(abs(G_complex_co1s).^2 + abs(G_complex_cross1s).^2);
 GaindB2s = 10*log10(abs(G_complex_co2s).^2 + abs(G_complex_cross2s).^2);
